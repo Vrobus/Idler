@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb52c431dc72fa64fb9ba3aeebb95a5b, type: 3}
+  m_Name: Bench
+  m_EditorClassIdentifier: 
+  Name: Bench
+  countWood: 1
+  countMetal: 0
+  pointDie: {x: 13, y: 0}
+  objectWithPlant: {fileID: 21300000, guid: 3916c7a0a96dcd64ea144dd60596aa14, type: 3}
+  objectWithoutPlant: {fileID: 21300000, guid: 2edd507cb92433449b0a416e91f3da15, type: 3}
