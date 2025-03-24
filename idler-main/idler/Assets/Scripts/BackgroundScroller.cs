@@ -5,7 +5,7 @@ using UnityEngine;
 public class BackgroundScroller : MonoBehaviour
 {
     public float scrollSpeed = 0.5f; // Скорость прокрутки
-    private Renderer renderer; // Компонент Renderer для материала
+    private new Renderer renderer; // Компонент Renderer для материала
 
     void Start()
     {
