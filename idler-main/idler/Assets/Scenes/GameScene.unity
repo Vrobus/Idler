@@ -187,6 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 167396278}
   - component: {fileID: 167396277}
+  - component: {fileID: 167396279}
   m_Layer: 0
   m_Name: BackSprite
   m_TagString: Untagged
@@ -214,7 +215,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9095900263c83f74fa7d7f986ce9310c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -235,7 +236,7 @@ SpriteRenderer:
   m_SortingLayerID: 632352015
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9aa1646d4312db0408d08bb275b4492e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d93499b8aa6b00d43bb981f826d69df9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -255,12 +256,25 @@ Transform:
   m_GameObject: {fileID: 167396276}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0.04, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -4.34, y: -0.55, z: 0}
+  m_LocalScale: {x: 2.13, y: 2.13, z: 2.13}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &167396279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167396276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7edd0c006818bb459bc5f8bf94587aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.5
 --- !u!1 &386478176
 GameObject:
   m_ObjectHideFlags: 0
