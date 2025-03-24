@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 1
-  speed: 1.5
+  speed: 2.6
   plantDead: 0
   objectFromResSO: {fileID: 11400000, guid: a6dcc67c0168f304b8fe6a83a865c2cf, type: 2}
 --- !u!61 &4511309103349565418
