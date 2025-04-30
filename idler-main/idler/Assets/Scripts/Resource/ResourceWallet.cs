@@ -7,9 +7,6 @@ public class ResourceWallet : MonoBehaviour
 {
     private readonly Dictionary<ResourceSO, Resource> resourceDictionary = new();
 
-    [SerializeField] private TextMeshProUGUI woodText;
-    [SerializeField] private TextMeshProUGUI metalText;
-
     [field: SerializeField] public Resource[] Resources { get; private set; }
 
     public bool IsDictionaryFilled { get; private set; } = false;

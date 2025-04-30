@@ -6,23 +6,28 @@ public abstract class ClickableObjects : MonoBehaviour
     private Pumping pumping;
     protected ResourceWallet resources;
     private GameObject managerResourcAndPump;
-    private void Start()
+
+    protected virtual void Start()
     {
         managerResourcAndPump = GameObject.FindWithTag("ManagerResources");
         pumping = managerResourcAndPump.GetComponent<Pumping>();
         resources = managerResourcAndPump.GetComponent<ResourceWallet>();
     }
+
     private void Update()
     {
         Move();
     }
+
     private void OnMouseDown()
     {
         GetDamage(pumping.damageClick);
     }
+
     protected virtual void Move()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(speed * Time.deltaTime * Vector3.right);
     }
+
     protected abstract void GetDamage(int damage);
 }

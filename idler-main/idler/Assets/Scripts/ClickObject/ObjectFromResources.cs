@@ -1,8 +1,17 @@
 using UnityEngine;
+
 public class ObjectFromResources : ClickableObjects
 {
     [HideInInspector] public bool plantDead = false;
     [SerializeField] private ObjectFromResSO objectFromResSO;
+
+    private ResourceIncomeMultiplier resourceIncomeMultiplier;
+
+    protected override void Start()
+    {
+        base.Start();
+        resourceIncomeMultiplier = FindObjectOfType<ResourceIncomeMultiplier>();
+    }
 
     public void ChangeSprite()
     {
@@ -21,7 +30,7 @@ public class ObjectFromResources : ClickableObjects
             for (int i = 0; i < objectFromResSO.resourceChanges.Length; i++)
             {
                 ResourceChange resourceChange = objectFromResSO.resourceChanges[i];
-                resources.GetResourceByResourceSO(resourceChange.resourceSO).Amount += resourceChange.amount;
+                resources.GetResourceByResourceSO(resourceChange.resourceSO).Amount += resourceChange.amount * resourceIncomeMultiplier.value;
             }
             
             Destroy(gameObject);

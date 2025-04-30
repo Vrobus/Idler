@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class UpgradeBar : MonoBehaviour
 {
+    [SerializeField] private WorkbenchUpgradable workbenchUpgradable;
+
     private UpgradeBarSegment[] segments;
 
     private void Awake()
     {
         segments = GetComponentsInChildren<UpgradeBarSegment>(true);
+    }
+
+    private void OnEnable()
+    {
+        workbenchUpgradable.Upgraded += IncrementFill;
+    }
+
+    private void OnDisable()
+    {
+        workbenchUpgradable.Upgraded -= IncrementFill;
     }
 
     public void IncrementFill()

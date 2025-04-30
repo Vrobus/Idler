@@ -2,5 +2,5 @@ using UnityEngine;
 
 public class Pumping : MonoBehaviour
 {
-    public int damageClick;
+    public int damageClick = 1;
 }
