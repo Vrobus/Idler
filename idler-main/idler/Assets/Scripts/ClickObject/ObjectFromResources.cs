@@ -3,22 +3,31 @@ public class ObjectFromResources : ClickableObjects
 {
     [HideInInspector] public bool plantDead = false;
     [SerializeField] private ObjectFromResSO objectFromResSO;
+
     public void ChangeSprite()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = objectFromResSO.objectWithoutPlant;
     }
+
     protected override void GetDamage(int damage)
     {
         if (plantDead)
         {
             hp -= damage;
         }
+
         if (hp <= 0)
         {
-            resources.GetMaterials(objectFromResSO.countWood, objectFromResSO.countMetal);
+            for (int i = 0; i < objectFromResSO.resourceChanges.Length; i++)
+            {
+                ResourceChange resourceChange = objectFromResSO.resourceChanges[i];
+                resources.GetResourceByResourceSO(resourceChange.resourceSO).Amount += resourceChange.amount;
+            }
+            
             Destroy(gameObject);
         }
     }
+
     protected override void Move()
     {
         base.Move();
@@ -27,5 +36,4 @@ public class ObjectFromResources : ClickableObjects
             Destroy(gameObject);
         }
     }
-    
 }

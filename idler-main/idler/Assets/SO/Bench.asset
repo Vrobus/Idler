@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Bench
   m_EditorClassIdentifier: 
   Name: Bench
-  countWood: 1
-  countMetal: 0
+  resourceChanges:
+  - resourceSO: {fileID: 11400000, guid: f7b7f46d7cbe3834d9041b1d836bccf1, type: 2}
+    amount: 1
   pointDie: {x: 13, y: 0}
   objectWithPlant: {fileID: 21300000, guid: 3916c7a0a96dcd64ea144dd60596aa14, type: 3}
   objectWithoutPlant: {fileID: 21300000, guid: 2edd507cb92433449b0a416e91f3da15, type: 3}

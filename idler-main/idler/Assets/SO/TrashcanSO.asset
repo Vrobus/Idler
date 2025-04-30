@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: TrashcanSO
   m_EditorClassIdentifier: 
   Name: Trashcan
-  countWood: 0
-  countMetal: 1
+  resourceChanges:
+  - resourceSO: {fileID: 11400000, guid: 4ddd796e79252e940bfd6347171361ad, type: 2}
+    amount: 1
   pointDie: {x: 13, y: 0}
   objectWithPlant: {fileID: 21300000, guid: 672444df1d5cfe94196d312f926e516f, type: 3}
   objectWithoutPlant: {fileID: 21300000, guid: 5ded1830d98a4984fa82a6aece00110d, type: 3}
