@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnPlant : MonoBehaviour
 {
     private GameObject curPlant;
-    [SerializeField] private GameObject[] prefabsPlant;
+    public List<GameObject> prefabs;
     [SerializeField] private float minTimeSpawn;
     [SerializeField] private float maxTimeSpawn;
     private bool exist = true;
@@ -23,7 +24,7 @@ public class SpawnPlant : MonoBehaviour
     {
         if(elapsedTime >= time)
         {
-            curPlant = Instantiate(prefabsPlant[Random.Range(0, prefabsPlant.Length)], transform.position, Quaternion.identity);
+            curPlant = Instantiate(prefabs[Random.Range(0, prefabs.Count)], transform.position, Quaternion.identity);
             exist = true;
             elapsedTime = 0;
         }

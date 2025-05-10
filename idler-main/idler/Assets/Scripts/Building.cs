@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,8 @@ public class Building : MonoBehaviour
     private ResourceWallet resourceWallet;
 
     public bool WasBought { get; private set; } = false;
+
+    public event Action Bought;
 
     private void Start()
     {
@@ -32,7 +35,9 @@ public class Building : MonoBehaviour
 
         gameObject.GetComponent<Image>().color = Color.white;
         WasBought = true;
-        gameObject.GetComponent<Button>().enabled = true;
+        if (gameObject.TryGetComponent(out Button button))
+            button.enabled = true;
         Destroy(frame);
+        Bought?.Invoke();
     }
 }
