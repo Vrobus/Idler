@@ -16,13 +16,10 @@ public class ResourceIncrementer : MonoBehaviour
 
     void Start()
     {
-        if (startButton != null)
-        {
-            startButton.onClick.AddListener(StartIncrementing);
-        }
+
     }
 
-    void StartIncrementing()
+    public void StartIncrementing()
     {
         if (!isRunning)
         {
