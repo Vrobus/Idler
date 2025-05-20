@@ -17,5 +17,5 @@ MonoBehaviour:
   - resourceSO: {fileID: 11400000, guid: 72275d7275633a346b929995957d7a56, type: 2}
     amount: 1
   pointDie: {x: 13, y: 0}
-  objectWithPlant: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  objectWithoutPlant: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  objectWithPlant: {fileID: 21300000, guid: 30f43e4497d81034a88c820727c62be8, type: 3}
+  objectWithoutPlant: {fileID: 21300000, guid: 781638681483cba4b8fe2f9d755741da, type: 3}
