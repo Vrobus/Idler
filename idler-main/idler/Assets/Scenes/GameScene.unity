@@ -351,6 +351,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198126300}
   m_CullTransparentMesh: 1
+--- !u!1 &223762968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4626630206354807533, guid: 8a2674adda27e7347a7312632fdcdcfc, type: 3}
+  m_PrefabInstance: {fileID: 2140436624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &223762972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223762968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173881636190c9142a66cff9e8486b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutterUpgradable: {fileID: 1122519917}
 --- !u!1 &292604071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,7 +1507,7 @@ MonoBehaviour:
       amount: 10
     - resourceSO: {fileID: 11400000, guid: 72275d7275633a346b929995957d7a56, type: 2}
       amount: 15
-  incrementIntervalLevels:
+  <IncrementIntervalLevels>k__BackingField:
   - 5
   - 2
   - 1
@@ -2831,7 +2849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1648715662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3768,7 +3786,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4626630206354807533, guid: 8a2674adda27e7347a7312632fdcdcfc, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 223762972}
   m_SourcePrefab: {fileID: 100100000, guid: 8a2674adda27e7347a7312632fdcdcfc, type: 3}
 --- !u!224 &2140436625 stripped
 RectTransform:

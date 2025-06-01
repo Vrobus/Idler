@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CutterUpgradable : WorkbenchUpgradable
 {
-    [SerializeField] private float[] incrementIntervalLevels;
+    [field: SerializeField] public float[] IncrementIntervalLevels { get; private set; }
 
     private Coroutine incrementResourcesRoutine;
 
@@ -18,7 +18,7 @@ public class CutterUpgradable : WorkbenchUpgradable
     {
         while (true)
         {
-            yield return new WaitForSeconds(incrementIntervalLevels[level - 2]);
+            yield return new WaitForSeconds(IncrementIntervalLevels[level - 2]);
             
             foreach (var resource in resourceWallet.Resources)
             {
