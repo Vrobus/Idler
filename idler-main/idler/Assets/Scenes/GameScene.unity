@@ -1478,17 +1478,21 @@ MonoBehaviour:
     - resourceSO: {fileID: 11400000, guid: 72275d7275633a346b929995957d7a56, type: 2}
       amount: 4
   - <ResourceCosts>k__BackingField:
+    - resourceSO: {fileID: 11400000, guid: 4ddd796e79252e940bfd6347171361ad, type: 2}
+      amount: 10
     - resourceSO: {fileID: 11400000, guid: 72275d7275633a346b929995957d7a56, type: 2}
       amount: 10
-    - resourceSO: {fileID: 11400000, guid: 139e6ce6066ce1e499b5f6c8eb81cb2a, type: 2}
-      amount: 10
   - <ResourceCosts>k__BackingField:
-    - resourceSO: {fileID: 11400000, guid: 139e6ce6066ce1e499b5f6c8eb81cb2a, type: 2}
+    - resourceSO: {fileID: 11400000, guid: f7b7f46d7cbe3834d9041b1d836bccf1, type: 2}
       amount: 12
-    - resourceSO: {fileID: 11400000, guid: 656f51f2de2795f4aa314e4bf3a8010f, type: 2}
+    - resourceSO: {fileID: 11400000, guid: 4ddd796e79252e940bfd6347171361ad, type: 2}
       amount: 10
-    - resourceSO: {fileID: 11400000, guid: 17722c35e7e4c8946b6605361d78fa3c, type: 2}
+    - resourceSO: {fileID: 11400000, guid: 72275d7275633a346b929995957d7a56, type: 2}
       amount: 15
+  incrementIntervalLevels:
+  - 5
+  - 2
+  - 1
 --- !u!1001 &1155668244
 PrefabInstance:
   m_ObjectHideFlags: 0
