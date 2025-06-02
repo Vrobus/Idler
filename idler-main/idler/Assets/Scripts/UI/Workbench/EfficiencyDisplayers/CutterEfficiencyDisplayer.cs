@@ -4,34 +4,12 @@ using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class CutterEfficiencyDisplayer : MonoBehaviour
+public class CutterEfficiencyDisplayer : EfficiencyDisplayer
 {
-    [SerializeField] private CutterUpgradable cutterUpgradable;
+    private CutterUpgradable CutterUpgradable => (CutterUpgradable)workbenchUpgradable;
 
-    private TextMeshProUGUI tmpu;
-
-    private void Awake()
+    protected override void Redraw()
     {
-        tmpu = GetComponent<TextMeshProUGUI>();
-    }
-
-    private void Start()
-    {
-        Redraw();
-    }
-
-    private void OnEnable()
-    {
-        cutterUpgradable.Upgraded += Redraw;
-    }
-
-    private void OnDisable()
-    {
-        cutterUpgradable.Upgraded -= Redraw;
-    }
-
-    private void Redraw()
-    {
-        tmpu.text = cutterUpgradable.level - 2 >= 0 ? $"Скорость добычи:\n1 ед. каждые {cutterUpgradable.IncrementIntervalLevels[cutterUpgradable.level - 2]} секунд" : "-";
+        SetText(CutterUpgradable.level - 2 >= 0 ? $"Скорость добычи:\n1 ед. каждые {CutterUpgradable.IncrementIntervalLevels[CutterUpgradable.level - 2]} секунд" : "-");
     }
 }

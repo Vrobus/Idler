@@ -1,36 +1,38 @@
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class SpawnPlant : MonoBehaviour
 {
-    private GameObject curPlant;
     public List<GameObject> prefabs;
     [SerializeField] private float minTimeSpawn;
     [SerializeField] private float maxTimeSpawn;
-    private bool exist = true;
     private float elapsedTime = 0;
+
+    public float MinTimeSpawn => minTimeSpawn;
+    public float MaxTimeSpawn => maxTimeSpawn;
+
     private void Update()
     {
-        if(curPlant == null && exist)
-        {
-            exist = false;
-        }
-        if (!exist)
-        {
-            TimeToSpawn(Random.Range(minTimeSpawn, maxTimeSpawn));
-        }
+        TickSpawner(Random.Range(minTimeSpawn, maxTimeSpawn));
     }
-    private void TimeToSpawn(float time)
+
+    private void TickSpawner(float time)
     {
         if(elapsedTime >= time)
         {
-            curPlant = Instantiate(prefabs[Random.Range(0, prefabs.Count)], transform.position, Quaternion.identity);
-            exist = true;
+            Instantiate(prefabs[Random.Range(0, prefabs.Count)], transform.position, Quaternion.identity);
             elapsedTime = 0;
         }
         else
         {
             elapsedTime += Time.deltaTime;
         }
+    }
+
+    public void DivideSpawnInterval(float divider)
+    {
+        minTimeSpawn /= divider;
+        maxTimeSpawn /= divider;
     }
 }

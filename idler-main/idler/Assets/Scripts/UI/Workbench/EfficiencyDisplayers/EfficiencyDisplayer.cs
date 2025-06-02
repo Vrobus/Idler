@@ -1,15 +1,13 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 using TMPro;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class CrowbarUpgradableEfficiencyDisplayer : MonoBehaviour
+public abstract class EfficiencyDisplayer : MonoBehaviour
 {
-    [SerializeField] private ResourceIncomeMultiplier resourceIncomeMultiplier;
-    [SerializeField] private WorkbenchUpgradable workbenchUpgradable;
+    [SerializeField] protected WorkbenchUpgradable workbenchUpgradable;
 
     private TextMeshProUGUI tmpu;
 
@@ -33,10 +31,10 @@ public class CrowbarUpgradableEfficiencyDisplayer : MonoBehaviour
         workbenchUpgradable.Upgraded -= Redraw;
     }
 
-    private void Redraw()
+    protected abstract void Redraw();
+
+    protected void SetText(string text)
     {
-        StringBuilder stringBuilder = new();
-        stringBuilder.AppendLine($"Кол-во ресурса / Клик: {resourceIncomeMultiplier.value}");
-        tmpu.text = stringBuilder.ToString();
+        tmpu.text = text;
     }
 }
