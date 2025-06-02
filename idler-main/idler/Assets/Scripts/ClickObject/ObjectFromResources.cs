@@ -1,21 +1,30 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class ObjectFromResources : ClickableObjects
 {
     [HideInInspector] public bool plantDead = false;
     [SerializeField] private ObjectFromResSO objectFromResSO;
 
+    private SpriteRenderer spriteRenderer;
+
     private ResourceIncomeMultiplier resourceIncomeMultiplier;
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     protected override void Start()
     {
         base.Start();
         resourceIncomeMultiplier = FindObjectOfType<ResourceIncomeMultiplier>();
+        spriteRenderer.sprite = objectFromResSO.objectWithPlant;
     }
 
     public void ChangeSprite()
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = objectFromResSO.objectWithoutPlant;
+        spriteRenderer.sprite = objectFromResSO.objectWithoutPlant;
     }
 
     protected override void GetDamage(int damage)
