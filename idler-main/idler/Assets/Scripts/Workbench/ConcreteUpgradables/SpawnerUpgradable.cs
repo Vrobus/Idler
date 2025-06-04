@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SpawnerUpgradable : WorkbenchUpgradable
 {
-    [SerializeField] private SpawnPlant plantSpawner;
+    [SerializeField] private PlantDataHolder dataHolder;
     [SerializeField] private float[] spawnIntervalDivisionLevels;
 
     protected override void IncrementStats()
     {
-        plantSpawner.DivideSpawnInterval(spawnIntervalDivisionLevels[level - 2]);
+        dataHolder.DivideSpawnInterval(spawnIntervalDivisionLevels[level - 2]);
     }
 }
