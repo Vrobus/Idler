@@ -7,12 +7,12 @@ public class SpawnerEfficiencyDisplayer : EfficiencyDisplayer
 {
     private readonly StringBuilder stringBuilder = new();
 
-    [SerializeField] private SpawnPlant plantSpawner;
+    [SerializeField] private PlantDataHolder plantDataHolder;
 
     protected override void Redraw()
     {
-        float minTime = Mathf.RoundToInt(plantSpawner.MinTimeSpawn);
-        float maxTime = Mathf.RoundToInt(plantSpawner.MaxTimeSpawn);
+        float minTime = Mathf.RoundToInt(plantDataHolder.MinSpawnInterval);
+        float maxTime = Mathf.RoundToInt(plantDataHolder.MaxSpawnInterval);
 
         stringBuilder.Clear();
         stringBuilder.AppendLine("Объекты спавнятся каждые");
