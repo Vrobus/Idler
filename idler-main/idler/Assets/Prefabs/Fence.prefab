@@ -103,7 +103,7 @@ MonoBehaviour:
   hp: 1
   speed: 2.6
   plantDead: 0
-  objectFromResSO: {fileID: 11400000, guid: a76723e5262ecc54cb7c368627e11b06, type: 2}
+  objectFromResSO: {fileID: 11400000, guid: 0d9c9224cc7463f46a68086b2311e1e7, type: 2}
 --- !u!61 &4511309103349565418
 BoxCollider2D:
   m_ObjectHideFlags: 0
