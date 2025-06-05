@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObjectSpawningBuilding : MonoBehaviour
 {
     [SerializeField] private Building building;
-    [SerializeField] private SpawnPlant plantSpawner;
+    [SerializeField] private PlantDataHolder plantDataHolder;
     [SerializeField] private GameObject prefabToSpawn;
 
     private void Awake()
@@ -16,6 +16,6 @@ public class ObjectSpawningBuilding : MonoBehaviour
 
     private void OnBought()
     {
-        plantSpawner.prefabs.Add(prefabToSpawn);
+        plantDataHolder.Prefabs.Add(prefabToSpawn);
     }
 }
