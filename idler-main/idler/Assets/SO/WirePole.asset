@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Wirepole
   resourceChanges:
-  - resourceSO: {fileID: 11400000, guid: 656f51f2de2795f4aa314e4bf3a8010f, type: 2}
+  - resourceSO: {fileID: 11400000, guid: 139e6ce6066ce1e499b5f6c8eb81cb2a, type: 2}
     amount: 1
   pointDie: {x: 13, y: 0}
   objectWithPlant: {fileID: 21300000, guid: 07445be47b0b5854cb5538fb139e063f, type: 3}

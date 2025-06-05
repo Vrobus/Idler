@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sign
   resourceChanges:
-  - resourceSO: {fileID: 11400000, guid: 139e6ce6066ce1e499b5f6c8eb81cb2a, type: 2}
-    amount: 1
+  - resourceSO: {fileID: 11400000, guid: 656f51f2de2795f4aa314e4bf3a8010f, type: 2}
+    amount: 2
   pointDie: {x: 13, y: 0}
   objectWithPlant: {fileID: 21300000, guid: fd8e3a46178a00b499e06a11d2f8de81, type: 3}
   objectWithoutPlant: {fileID: 21300000, guid: d4365faa382b5964b8b1b18b442c5855, type: 3}

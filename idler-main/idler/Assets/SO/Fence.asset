@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Fence
   resourceChanges:
-  - resourceSO: {fileID: 11400000, guid: 656f51f2de2795f4aa314e4bf3a8010f, type: 2}
-    amount: 1
+  - resourceSO: {fileID: 11400000, guid: 72275d7275633a346b929995957d7a56, type: 2}
+    amount: 2
   pointDie: {x: 13, y: 0}
   objectWithPlant: {fileID: 21300000, guid: ca70edb8755c814468bd9593269985b1, type: 3}
   objectWithoutPlant: {fileID: 21300000, guid: 781638681483cba4b8fe2f9d755741da, type: 3}
