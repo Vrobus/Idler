@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5a4a6507254b8247ba81305903e2a5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f56a9d8230ca31d44a960d20cc8c3f4a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f56a9d8230ca31d44a960d20cc8c3f4a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a5a4a6507254b8247ba81305903e2a5e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6964,7 +6964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceWallet: {fileID: 1905355684}
-  resourceSOToDisplay: {fileID: 11400000, guid: f7b7f46d7cbe3834d9041b1d836bccf1, type: 2}
+  resourceSOToDisplay: {fileID: 11400000, guid: 139e6ce6066ce1e499b5f6c8eb81cb2a, type: 2}
 --- !u!1001 &1279189325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11868,7 +11868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2104761503
 Transform:
   m_ObjectHideFlags: 0
