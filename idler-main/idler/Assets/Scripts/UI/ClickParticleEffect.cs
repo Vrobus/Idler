@@ -1,13 +1,15 @@
-using UnityEngine;
+п»їusing UnityEngine;
 
 public class ClickParticleEffect : MonoBehaviour
 {
     [SerializeField] private ParticleSystem particles;
-    [SerializeField] private float stopDelay = 2f; // Задержка перед остановкой
+    [SerializeField] private float stopDelay = 2f; // Г‡Г Г¤ГҐГ°Г¦ГЄГ  ГЇГҐГ°ГҐГ¤ Г®Г±ГІГ Г­Г®ГўГЄГ®Г©
 
     private Camera mainCamera;
     private bool isMouseHeld;
     private float mouseReleaseTime;
+    AudioManager audioManager;
+
 
     void Start()
     {
@@ -19,36 +21,56 @@ public class ClickParticleEffect : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Particle System не назначен в инспекторе!");
+            Debug.LogError("Particle System РЅРµ РЅР°Р·РЅР°С‡РµРЅ РІ РёРЅСЃРїРµРєС‚РѕСЂРµ!");
+        }
+
+        // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ audioManager
+        GameObject audioObject = GameObject.FindGameObjectWithTag("Audio");
+        if (audioObject != null)
+        {
+            audioManager = audioObject.GetComponent<AudioManager>();
+            if (audioManager == null)
+            {
+                Debug.LogError("AudioManager РєРѕРјРїРѕРЅРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ РЅР° РѕР±СЉРµРєС‚Рµ СЃ С‚РµРіРѕРј Audio!");
+            }
+        }
+        else
+        {
+            Debug.LogError("РћР±СЉРµРєС‚ СЃ С‚РµРіРѕРј Audio РЅРµ РЅР°Р№РґРµРЅ!");
         }
     }
 
+
     void Update()
     {
-        // Нажатие кнопки мыши
+        
+        
+        // ГЌГ Г¦Г ГІГЁГҐ ГЄГ­Г®ГЇГЄГЁ Г¬Г»ГёГЁ
         if (Input.GetMouseButtonDown(0))
         {
             isMouseHeld = true;
             UpdateParticlePosition();
             particles.Play();
+            audioManager.PlaySFX(audioManager.cuttingLeaves);
+
         }
 
-        // Удержание кнопки мыши
+        // Г“Г¤ГҐГ°Г¦Г Г­ГЁГҐ ГЄГ­Г®ГЇГЄГЁ Г¬Г»ГёГЁ
         if (Input.GetMouseButton(0) && isMouseHeld)
         {
             UpdateParticlePosition();
         }
 
-        // Отпускание кнопки мыши
+        // ГЋГІГЇГіГ±ГЄГ Г­ГЁГҐ ГЄГ­Г®ГЇГЄГЁ Г¬Г»ГёГЁ
         if (Input.GetMouseButtonUp(0))
         {
             isMouseHeld = false;
             mouseReleaseTime = Time.time;
         }
 
-        // Задержка после отпускания
+        // Г‡Г Г¤ГҐГ°Г¦ГЄГ  ГЇГ®Г±Г«ГҐ Г®ГІГЇГіГ±ГЄГ Г­ГЁГї
         if (!isMouseHeld && particles.isPlaying && Time.time >= mouseReleaseTime + stopDelay)
-        {
+        { 
             particles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
         }
     }
