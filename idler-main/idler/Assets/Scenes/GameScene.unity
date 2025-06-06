@@ -1134,9 +1134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '150
-
-'
+  m_text: 90
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2133,7 +2131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2476,7 +2474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 7
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2686,7 +2684,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 80
+  m_text: 90
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4864,7 +4862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 14
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7922,7 +7920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1426997004804020059, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: m_text
-      value: 150
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1635323683169007260, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: m_margin.x
@@ -8147,23 +8145,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[0].amount
-      value: 150
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[1].amount
-      value: 80
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[2].amount
-      value: 250
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[3].amount
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[4].amount
-      value: 150
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[0].resourceSO
@@ -8763,7 +8761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 300
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9260,7 +9258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1426997004804020059, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: m_text
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1426997004804020059, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: m_margin.z
@@ -9501,15 +9499,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[0].amount
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[1].amount
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[2].amount
-      value: 20
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[0].resourceSO
@@ -12229,7 +12227,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.505
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -13256,7 +13254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 250
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15971,7 +15969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1426997004804020059, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: m_text
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1426997004804020059, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: m_margin.y
@@ -16151,11 +16149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[0].amount
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[1].amount
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9044821560696136381, guid: 644d61873e8b2694994c7884c94e0d87, type: 3}
       propertyPath: resourceCosts.Array.data[0].resourceSO
