@@ -10,6 +10,6 @@ public class CutterEfficiencyDisplayer : EfficiencyDisplayer
 
     protected override void Redraw()
     {
-        SetText(CutterUpgradable.level - 2 >= 0 ? $"Скорость добычи:\n1 ед. каждые {CutterUpgradable.IncrementIntervalLevels[CutterUpgradable.level - 2]} секунд" : "-");
+        SetText(CutterUpgradable.level - 2 >= 0 ? $"Скорость добычи:\n1 ед. каждые {CutterUpgradable.IncrementIntervalLevels[CutterUpgradable.level - 2]} секунд" : "Aвтодобыча ресурсов");
     }
 }
